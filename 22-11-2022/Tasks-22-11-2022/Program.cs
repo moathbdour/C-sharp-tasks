@@ -12,116 +12,234 @@ namespace Tasks_22_11_2022
         static void Main(string[] args)
         {
 
-            //Task1
-            int[] ARR = { 1, 7, 9, 45, };
-            string[] arr2 = { "Str", "alex", "moh" };
-            string[] arr3 = { "the", "fox", "over ", "lazy", "dog", };
-            //---------------------------------------------------------------------------
+            ////Task1
+            //int[] ARR = { 1, 7, 9, 45, };
+            //string[] arr2 = { "Str", "alex", "moh" };
+            //string[] arr3 = { "the", "fox", "over ", "lazy", "dog", };
+            ////---------------------------------------------------------------------------
 
 
 
 
-            //Task2
-            //What the index of "Banana","Tomato" ?
-            //String[ ]  fruits =["Tomato", "Banana", "Watermelon"]
+            ////Task2
+            ////What the index of "Banana","Tomato" ?
+            ////String[ ]  fruits =["Tomato", "Banana", "Watermelon"]
 
 
-            //Answers are : 0 , 1
-            //---------------------------------------------------------------------
-
-
-
-            //Task3
-            string[] FavoriteFood = { "Maftool", "maglooba", "Mlookheyah", "Kabsah", "Makmoorah" };
-            string[] FavoriteSport = { "soccer", "volleyball", "Swimming" };
-            string[] FavoriteMovies = { "Tenet", "inception", "miss peregrine's home for peculiar children" , "Harry Potter" };
-
-            //--------------------------------------------------------------------------------------------------------------------------------------
+            ////Answers are : 0 , 1
+            ////---------------------------------------------------------------------
 
 
 
+            ////Task3
+            //string[] FavoriteFood = { "Maftool", "maglooba", "Mlookheyah", "Kabsah", "Makmoorah" };
+            //string[] FavoriteSport = { "soccer", "volleyball", "Swimming" };
+            //string[] FavoriteMovies = { "Tenet", "inception", "miss peregrine's home for peculiar children" , "Harry Potter" };
 
-            //Task4
+            ////--------------------------------------------------------------------------------------------------------------------------------------
 
 
-            Console.Write("Enter three values: ");
-            string[] x = Console.ReadLine().Split(',');
-            int[] number = new int[x.Length];
-            for (int i = 0; i < x.Length; i++)
-            {
-                number[i] = Convert.ToInt32(x[i]);
-            }
-            //foreach (int i in number)
+
+
+            ////Task4
+
+
+            //Console.Write("Enter three values: ");
+            //string[] x = Console.ReadLine().Split(',');
+            //int[] number = new int[x.Length];
+            //for (int i = 0; i < x.Length; i++)
             //{
-            //    int y=y+ i;
-            //}
-            Console.WriteLine(number[0] + number[1] + number[2]);
-            //for(int i=0 ; i<number.Length; i++) { 
-
-            //    int t = t+ number[i];
-
+            //    number[i] = Convert.ToInt32(x[i]);
             //}
 
+            //Console.WriteLine(number[0] + number[1] + number[2]);
+            ////for(int i=0 ; i<number.Length; i++) { 
+
+            ////    int t = t+ number[i];
+
+            ////}
+
+            ////--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+            ////Task5
+            //int w=0;
+
+            //for (int d=0 ; d < 100; d++) { 
+            //    if(d%2!=0)
+            //    {
+            //        Console.Write(d+" ");
+            //        w += d;
+
+            //    }
+
+
+
+            //}
+            //Console.WriteLine(w);
+
+
+
+            ////--------------------------------------------------------------------------------------------------------------------------------------
+
+
+            ////Task6
+
+            ////for (int y=0 ; y < 5; y++) {
+            ////    for (int r = 4; r > y; r--)
+            ////    {
+            ////        Console.Write(" ");
+
+
+            ////    }
+
+            ////    for (int u=0 ; u < y; u++)
+            ////    {
+            ////        Console.Write("*");
+            ////    }
+            ////    Console.WriteLine(" ");
+
+            ////}
+
+
+
+            //for (int y = 0; y < 5; y++)
+            //{
+            //    for (int r = 10; r > y; r--)
+            //    {
+            //        Console.Write(" ");
+
+
+            //    }
+
+
+            //    for (int u = 0; u < y; u++)
+            //    {
+
+            //        Console.Write(" *");
+
+
+            //    }
+            //    Console.WriteLine("");
+
+
+            //}
+
+            ////--------------------------------------------------------------------------------------------------------------------------------------
+            ////Task7
+            //int c = 1;
+
+            //for (int y = 0; y < 5; y++)
+            //{
+            //    for (int r = 4; r > y; r--)
+            //    {
+            //        Console.Write(" ");
+
+
+            //    }
+
+            //    for (int u = 0; u < y; u++)
+            //    {
+
+            //        Console.Write(c + " ");
+            //        c++;
+
+            //    }
+            //    Console.WriteLine(" ");
+
+            //}
+
+
+
+
+            //Task
             //--------------------------------------------------------------------------------------------------------------------------------------
+            //Console.Write("Enter as much values you want: ");
+            //string[] i = Console.ReadLine().Split(',');
+            //int[] numbers = new int[x.Length];
+            //for (int u = 0; u < x.Length; u++)
+            //{
+            //    numbers[u] = Convert.ToInt32(x[u]);
+            //}
+            //double o = 0;
+
+            //for (int k = 0; k < numbers.Length; k++)
+            //{
 
 
-
-            //Task5
-            int w=0;
-
-            for (int d=0 ; d < 100; d++) { 
-                if(d%2!=0)
-                {
-                    Console.Write(d+" ");
-                    w += d;
-
-                }
-            
-            
-            
-            }
-            Console.WriteLine(w);
+            //}
 
 
+            string f = Console.ReadLine();
+            string[] nums = f.Split(',');
+            int[] x1 = new int[nums.Length];
+            //int[] x2 = new int[] { };
+            //int sum = 0;
+            //int co = 0;
 
-            //--------------------------------------------------------------------------------------------------------------------------------------
-
-
-            //Task6
-
-            for (int y=0 ; y < 5; y++) { 
-            
-            for(int u=0 ; u < y; u++)
-                {
-                    Console.Write("*");
-                }
-                Console.WriteLine(" ");
-
-            }
-
-            //--------------------------------------------------------------------------------------------------------------------------------------
-            //Task7
-            int c = 1;
-
-            for (int y = 0; y < 5; y++)
+            for (int i = 0; i < nums.Length; i++)
             {
-                for (int r = 4; r > y; r--)
+                x1[i] = Convert.ToInt32(nums[i]);
+            }
+
+            
+            for (int a = 1; a < x1.Length; a++)
+            {
+                for (int d = 0; d < a; d++)
+                    while (x1[a] == x1[d])
+                    {
+                        x1[d] = 0;
+                    }
+            }
+            int summation = 0;
+            int zeros = 0;
+            for(int h=0; h < x1.Length;h++)
+            {
+                summation+= x1[h];
+                if (x1[h] == 0)
                 {
-                    Console.Write(" ");
-
-
+                    zeros++;
                 }
-
-                for (int u = 0; u < y; u++)
-                {
-                  
-                    Console.Write(c + " ");
-                    c++;
-                   
-                }
-                Console.WriteLine(" ");
 
             }
+            double jj = summation / (x1.Length - zeros);
+
+            Console.WriteLine(jj);
+
+
+
+            //string f = Console.ReadLine();
+            //string[] nums = f.Split(',');
+            //int[] x1 = new int[nums.Length];
+            //int[] x2 = new int[] { };
+            //int sum = 0;
+            //int co = 0;
+
+            //for (int i = 0; i < nums.Length; i++)
+            //{
+            //    x1[i] = Convert.ToInt32(nums[i]);
+            //}
+
+
+
+
+            //int[] array = { 1, 3, 4, 5, 4, 2 };
+            //int item = 4;
+
+            //for(int i=0; i < x1.Length; i++)
+            //{
+            //    int index = Array.IndexOf(x1, i);
+            //    x1 = x1.Where((e, p) => p != i).ToArray();
+
+            //}
+
+
+
+            //for (int x = 0; x < x1.Length; x++)
+            //{
+            //    Console.WriteLine(x);
+            //}
         }
     }
 }
