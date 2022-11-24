@@ -11,41 +11,47 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            string f = Console.ReadLine();
-            string[] nums = f.Split(',');
-            int[] x1 = new int[nums.Length];
-            //int[] x2 = new int[] { };
-            //int sum = 0;
-            //int co = 0;
+            Console.WriteLine("input number 1");
 
-            for (int i = 0; i < nums.Length; i++)
-            {
-                x1[i] = Convert.ToInt32(nums[i]);
-            }
+            int m1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("input number 2");
 
+            int m2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("input number 3");
 
-            for (int a = 1; a < x1.Length; a++)
+            int m3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("input number 4");
+
+            int m4 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("input number 5");
+
+            int m5 = Convert.ToInt32(Console.ReadLine());
+
+            if (m1 > m2 && m1 > m3 && m1 > m4 && m1 > m5)
             {
-                for (int d = 0; d < a; d++)
-                    while (x1[a] == x1[d])
-                    {
-                        x1[d] = 0;
-                    }
-            }
-            int summation = 0;
-            int zeros = 0;
-            for (int h = 0; h < x1.Length; h++)
-            {
-                summation += x1[h];
-                if (x1[h] == 0)
-                {
-                    zeros++;
-                }
+                Console.WriteLine("the max number is : " + m1);
 
             }
-            double jj = summation / (x1.Length - zeros);
+            else if (m1 < m2 && m2 > m3 && m2 > m4 && m2 > m5)
+            {
+                Console.WriteLine("the max number is : " + m2);
 
-            Console.WriteLine(jj);
+            }
+            else if (m3 > m1 && m2 < m3 && m3 > m4 && m3 > m5)
+            {
+                Console.WriteLine("the max number is : " + m3);
+
+            }
+            else if (m4 > m2 && m4 > m3 && m1 < m4 && m4 > m5)
+            {
+                Console.WriteLine("the max number is : " + m4);
+
+            }
+            else if (m5 > m2 && m5 > m3 && m5 > m4 && m1 < m5)
+            {
+                Console.WriteLine("the max number is : " + m5);
+
+            }
 
         }
     }
