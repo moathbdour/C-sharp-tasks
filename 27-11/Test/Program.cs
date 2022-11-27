@@ -1,13 +1,10 @@
 ﻿using System;
-using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
-namespace Tasks_23_11_2022
+namespace Test
 {
     internal class Program
     {
@@ -30,7 +27,7 @@ namespace Tasks_23_11_2022
             return cub;
         }
 
-        static int[] GetYears (int[] b)
+        static int[] GetYears(int[] b)
         {
             int sum = 0;
 
@@ -45,12 +42,12 @@ namespace Tasks_23_11_2022
             int[] PassYears = new int[sum];
             int h = 0;
 
-            for (int r=0; r < b.Length ; r++)
+            for (int r = 0; r < b.Length; r++)
             {
                 if (b[r] > 1950)
                 {
 
-                   
+
                     PassYears[h] = b[r];
                     h++;
                 }
@@ -58,35 +55,37 @@ namespace Tasks_23_11_2022
             return PassYears;
         }
 
-        static int calculateAge (int t) {
+        static int calculateAge(int t)
+        {
 
             //int myAge = 2022-t;
-            int myAge =  t;
-            return myAge*365+myAge/4;
-        
-        
-        
+            int myAge = t;
+            return myAge * 365 + myAge / 4;
+
+
+
         }
 
-        static int animals (int ch , int co , int pi) {
+        static int animals(int ch, int co, int pi)
+        {
 
-            return ch*2+co*4+pi*4;
+            return ch * 2 + co * 4 + pi * 4;
         }
 
 
-        static string check (string[] userInput)
+        static string check(string[] userInput)
 
         {
-            
+
             string[][] data = new string[3][];
             data[0] = new string[2] { "moathbdur@gmail.com", "passward" };
             data[1] = new string[2] { "moath bdour", "passward2" };
             data[2] = new string[2] { "anyuser", "passward3" };
             int count = 0;
-            
-            for (int x=0 ; x < data.Length; x++)
+
+            for (int x = 0; x < data.Length; x++)
             {
-                for (int y=0; y< data[x].Length; y++)
+                for (int y = 0; y < data[x].Length; y++)
                 {
                     while (userInput[y] == data[x][y])
                     {
@@ -95,35 +94,39 @@ namespace Tasks_23_11_2022
                         {
                             return "pass";
                         }
-                        
+
                     }
                 }
-            }   
-               return "failed";
-        }
-
-        static int powernumber1 (int b , int p) { 
-        
-            int sum = 1;
-        for(int x=0 ; x < p ; x++) {
-            sum*=b ;
-            
             }
-        return sum;
+            return "failed";
+        }
+
+        static int powernumber1(int b, int p)
+        {
+
+            int sum = 1;
+            for (int x = 0; x < p; x++)
+            {
+                sum *= b;
+
+            }
+            return sum;
         }
 
 
-        static string leap (int p)
+        static string leap(int p)
         {
-            if (p<1900|| p > 2024)
+            if (p < 1900 || p > 2024)
             {
                 Console.WriteLine("please input year between 1900-2024");
-                p=Convert.ToInt32(Console.ReadLine());
-               
-            }
-            else { 
+                p = Convert.ToInt32(Console.ReadLine());
 
-                if (p%4==0 && (p%100!=0 || p % 400 == 0)){
+            }
+            else
+            {
+
+                if (p % 4 == 0 && (p % 100 != 0 || p % 400 == 0))
+                {
                     return "its a leap year";
                 }
                 else
@@ -138,7 +141,7 @@ namespace Tasks_23_11_2022
         }
 
 
-        static string primenumber (int TestedNumber)
+        static string primenumber(int TestedNumber)
         {
             int savedNumber = TestedNumber;
             int sum = 0, m;
@@ -153,9 +156,10 @@ namespace Tasks_23_11_2022
             //Console.WriteLine(sum);
             int lastnumber = savedNumber % 10;
             //Console.WriteLine(lastnumber);
-            
-           
-            if((savedNumber !=2 || savedNumber!=3 || savedNumber!=1 ) && (lastnumber %2 ==0 || sum %3 ==0 ||  (lastnumber == 5 && savedNumber>10)   || lastnumber==0)) {
+
+
+            if ((savedNumber != 2 || savedNumber != 3 || savedNumber != 1) && (lastnumber % 2 == 0 || sum % 3 == 0 || (lastnumber == 5 && savedNumber > 10) || lastnumber == 0))
+            {
 
                 return "its not a prime number";
 
@@ -173,9 +177,10 @@ namespace Tasks_23_11_2022
         static int wordsCounter(string[] sentence)
         {
             int counter = 0;
-            for (int x=0; x<sentence.Length; x++)
+            for (int x = 0; x < sentence.Length; x++)
             {
-                if (sentence[x].Length>=2) { 
+                if (sentence[x].Length >= 2)
+                {
                     counter++;
 
 
@@ -255,7 +260,7 @@ namespace Tasks_23_11_2022
             int pigs = Convert.ToInt32(Console.ReadLine());
 
 
-            Console.WriteLine("congeratulations your farm has "+animals(chickens, cows, pigs) + " legs.");
+            Console.WriteLine("congeratulations your farm has " + animals(chickens, cows, pigs) + " legs.");
 
             //End||| -_-|||-_-|||||-_-||||-_-|||-_-|||||-_-||||-_-|||-_-|||||-_-||||-_-|||-_-|||||-_-||||
 
@@ -305,7 +310,7 @@ namespace Tasks_23_11_2022
 
             //Task10 
             Console.WriteLine("please input a sentence to count the number of words in it :");
-            String[] inputtedSentence= Console.ReadLine().Split(' ');
+            String[] inputtedSentence = Console.ReadLine().Split(' ');
             Console.WriteLine("the number of words are :" + wordsCounter(inputtedSentence));
 
             //End||| -_-|||-_-|||||-_-||||-_-|||-_-|||||-_-||||-_-|||-_-|||||-_-||||-_-|||-_-|||||-_-||||
