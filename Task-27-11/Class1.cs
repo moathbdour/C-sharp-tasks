@@ -26,8 +26,6 @@ namespace Task_27_11
             phone = phone1;
 
             checker();
-
-
         }
 
         public String[] checker()
@@ -62,6 +60,7 @@ namespace Task_27_11
             return result;
 
         }
+
 
      
        
