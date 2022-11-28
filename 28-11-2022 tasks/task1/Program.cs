@@ -11,6 +11,21 @@ namespace task1
     {
         class car
         {
+
+
+
+            //static double calc(double x)
+            //{
+            //    double summation = x * 20;
+            //    return summation;
+            //}
+            //static void Main(string[] args)
+            //{
+            //    Console.WriteLine("please inter how much leters you have");
+            //    double leters = Convert.ToDouble(Console.ReadLine());
+            //    Console.WriteLine("your car can meve " + calc(leters) + "killometers");
+
+            //}
             public int makeYear;
             public string type;
             public int price;
@@ -32,6 +47,12 @@ namespace task1
                     
                     mystato = "the engin is off";
                 }
+            }
+
+            public double calc(double x)
+            {
+                double summation = x * 20;
+                return summation;
             }
 
 
@@ -100,6 +121,10 @@ namespace task1
             {
                 Console.WriteLine(stat[i]);
             }
+
+            Console.WriteLine("please inter how much leters you have");
+            double leters = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("your car can meve " + mycar.calc(leters) + " killometers");
 
 
 
