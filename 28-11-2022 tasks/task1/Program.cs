@@ -112,7 +112,7 @@ namespace task1
             else
 
             {
-                st = true;
+                st = false;
             }
             Opel mycar = new Opel(year, type, price, model, pallet, color);
             mycar.engine(st);
