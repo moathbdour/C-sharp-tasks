@@ -9,51 +9,92 @@ namespace Task
 {
     internal class Program
     {
-
-        public class car
+        interface moath
         {
-            public void StartEngine() {
-                Console.writeLine("peep peep")
-}
-            public void StopEngine() {
-                Console.writeLine("peep peep")
-}
-            public void OpenDoor() {
-                Console.writeLine("peep peep")
-}
-            public void CloseDoor() {
-                Console.writeLine("peep peep")
-}
-            public void Honk() {
-                Console.writeLine("peep peep")
-}
-            public void IncreaseSpeed() {
-                Console.writeLine("peep peep")
-}
-            public void DecreaseSpeed() {
-                Console.writeLine("peep peep")
-}
-            public void Breaks() {
-                Console.writeLine("peep peep")
-}
-            public void OpenWindow() {
-                Console.writeLine("peep peep")
-}
-            public void CloseWindow() {
-                Console.writeLine("peep peep")
-}
-            public void AdjustSeat() {
-                Console.writeLine("peep peep")
-}
-            public void CleanGlass() {
-                Console.writeLine("peep peep")
-}
-            public void ChangeGear() {
-                Console.writeLine("peep peep")
-}
+             void StartEngine();
+            void StopEngine();
+             void OpenDoor();
+            void CloseDoor();
+            void Honk();
+            void IncreaseSpeed();
+            void DecreaseSpeed();
+            void Breaks();
+            void OpenWindow();
+            void CloseWindow();
+            void AdjustSeat();
+            void CleanGlass();
+            void ChangeGear();
         }
 
-      public  class Employee
+        public class car : moath
+        {
+            public void AdjustSeat()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Breaks()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void ChangeGear()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void CleanGlass()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void CloseDoor()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void CloseWindow()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void DecreaseSpeed()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Honk()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void IncreaseSpeed()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void OpenDoor()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void OpenWindow()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void StartEngine()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void StopEngine()
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public  class Employee
         {
           protected  string Name;
             protected string[] DateBirth;
@@ -119,9 +160,9 @@ namespace Task
 
             public void test()
             {
-                Console.WriteLine(Name);
+                Console.WriteLine("your name is "+Name);
                 Console.WriteLine(DateBirth[0]+"/"+ DateBirth[1]+"/"+ DateBirth[2]);
-                Console.WriteLine(ID);
+                Console.WriteLine("your ID is : "+ID);
                 Console.WriteLine("you are " + realage[2] + " year " + realage[1] + " month " + realage[0] + " days");
             }
 
